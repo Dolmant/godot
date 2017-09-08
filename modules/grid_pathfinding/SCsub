@@ -1,5 +1,14 @@
 # SCsub
 Import('env')
+Import('env_modules')
 
-local_env = env.Clone()
-env.add_source_files(env.modules_sources,"*.cpp") # just add all cpp files to the build
+local_env = env_modules.Clone()
+
+# Thirdparty source files
+if (env['builtin_boost'] != 'no'):
+    thirdparty_dir = "#/thirdparty/boost/"
+
+    local_env.Append(CPPPATH=[thirdparty_dir])
+    local_env.Append(CPPPATH=[thirdparty_dir + "/lib"])
+
+local_env.add_source_files(env.modules_sources,"*.cpp") # just add all cpp files to the build

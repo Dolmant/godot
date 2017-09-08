@@ -150,6 +150,7 @@ opts.Add('warnings', "Set the level of warnings emitted during compilation (extr
 # Thirdparty libraries
 opts.Add('builtin_freetype', "Use the builtin freetype library (yes/no)", 'yes')
 opts.Add('builtin_glew', "Use the builtin glew library (yes/no)", 'yes')
+opts.Add('builtin_boost', "Use the builtin boost library (yes/no)", 'yes')
 opts.Add('builtin_libmpcdec', "Use the builtin libmpcdec library (yes/no)", 'yes')
 opts.Add('builtin_libogg', "Use the builtin libogg library (yes/no)", 'yes')
 opts.Add('builtin_libpng', "Use the builtin libpng library (yes/no)", 'yes')
