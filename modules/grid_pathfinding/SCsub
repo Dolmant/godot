@@ -9,6 +9,6 @@ if (env['builtin_boost'] != 'no'):
     thirdparty_dir = "#/thirdparty/boost/"
 
     local_env.Append(CPPPATH=[thirdparty_dir])
-    local_env.Append(CPPPATH=[thirdparty_dir + "/lib"])
+    env.Append(LIBPATH=[thirdparty_dir + "/lib"])
 
 local_env.add_source_files(env.modules_sources,"*.cpp") # just add all cpp files to the build

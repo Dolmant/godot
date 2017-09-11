@@ -19,7 +19,7 @@ class Keyframe : public Reference {
 
     std::vector<frame_struct> keyframes;
     int internal_type;
-    float get_cache = Vector2(0, 0);
+    float get_cache;
     float get_time_cache = -1;
     
 protected:

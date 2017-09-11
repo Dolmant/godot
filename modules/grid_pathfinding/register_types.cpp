@@ -2,7 +2,7 @@
 
 #include "register_types.h"
 #include "object_type_db.h"
-#include "pathfinder.h"
+#include "pathfinding.h"
 
 void register_grid_pathfinding_types() {
         ObjectTypeDB::register_type<Pathfinding>();
