@@ -116,11 +116,7 @@ void Pathfinding::Init(String pMap_init) {
     }
 };
 
-Array Pathfinding::GetBuffer() {
-    return pOutBuffer;
-}
-
-Array Pathfinding::GetMultiple() {
+Array Pathfinding::Get_Buffer() {
     return pOutBuffer;
 }
 
